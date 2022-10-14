@@ -1,0 +1,73 @@
+ion-title{
+    background: #A93226 ;
+    color: white;
+    text-align: center;
+}
+ion-header{
+    background: #A93226 ;
+    height: 10%;
+}
+ion-icon.back{
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+.formulario{
+    font-family: Abel;
+    font-size: 15px;
+    font-weight:inherit;
+    margin-top: 15%;
+    margin-left: 20px;
+}
+ion-input.rounded {
+    width: 95%;
+    height:50px;
+    background-color: rgba(128, 128, 128, 0.192);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;  
+}
+ion-label{
+    font-family: Abel;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.fecha{
+    margin-right: 5%;
+}
+ion-input.roundedc {
+    width: 20%;
+    height:50px;
+    background-color: rgba(128, 128, 128, 0.192);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;  
+}
+.codigo{
+    margin-right: 5%;
+}
+ion-input.roundedcvv{
+    width: 14%;
+    height:50px;
+    background-color: rgba(128, 128, 128, 0.192);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;  
+}
+ion-button.agregar{
+    margin-left: 15%;
+    margin-top: 15%;
+    color: white;
+    --background:#A93226;
+}
+.advertencia{
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 15px;
+}

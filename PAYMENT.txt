@@ -1,0 +1,48 @@
+<ion-header [translucent]="true"> 
+  <ion-icon name="arrow-back-circle" class="back"  routerLink="/home"></ion-icon>
+  <ion-title>
+      Métodos de Pago
+    </ion-title>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="metodos">
+    <ion-label>Métodos de pago</ion-label> 
+    <br>
+    <ion-label class="nuevolabel" (click)="agregarPago()">Agrega un método de pago nuevo + </ion-label>
+    <ion-card class="metodoscard">
+      <div class="iconos">
+        <ion-button class="efectivo">
+          <img src="https://img.icons8.com/material/24/000000/cash-app.png"/>
+        </ion-button>   
+        <ion-button class="tarjeta">
+          <img src="https://img.icons8.com/material/24/000000/visa--v1.png"/>
+        </ion-button>
+        <ion-button class="paypal">   
+          <img src="https://img.icons8.com/material/24/000000/paypal.png"/>
+        </ion-button>
+      </div>
+      <div class="nombres iconos">
+        <ion-label class="efectivolabel">Efectivo</ion-label>
+        <ion-label class="tarjetalabel">Tarjeta</ion-label>
+        <ion-label class="paypallabel">Paypal</ion-label> 
+      </div> 
+    </ion-card>
+  </div>
+  <!--<div class="promocion">
+    <ion-label>Promoción</ion-label>
+  </div>-->
+  <div class="listapagos">
+    <ion-label class="mispagoslabel">Mis Pagos</ion-label>
+    <ion-card class="metodosmispagos">
+      <div>
+        <img src="../../assets/visa.png" class="visa">
+      </div>
+      <div>
+        <img src="../../assets/cash1.png" class="efectivopesos">
+      </div>
+      <div>
+        <img src="../../assets/paypal.png" class="paypal">
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

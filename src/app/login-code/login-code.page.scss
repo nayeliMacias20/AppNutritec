@@ -1,0 +1,93 @@
+ion-content.background{
+    --background: linear-gradient(#f71a06,rgb(243, 87, 87));
+        
+}
+.square{
+    //font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-family: Abel;
+    color: #070707; 
+    font-size: 18px; 
+    font-weight: 650; 
+    text-align: center; 
+    background: #fafbfc; 
+    margin: 0 0 25px; 
+    margin-top: 35%;
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #f8f8f8; 
+}
+ion-fab{
+    --background: none !important;
+}
+.back{
+    position: relative;
+    right: 515%;
+    margin-top:5%;
+    --background: none;
+
+}
+.adelante{
+    position: relative;
+    margin-right: 20%;
+    margin-top:1050%;
+    --background: none;
+}
+.arrow{
+    color: black;
+}
+.numberinput{
+    font-size: 20px;
+    font-weight: 650; 
+    font-family: Abel;
+}
+.number1{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 13%;
+    margin-right: 73%;
+    text-align: center;
+    --background:#fafbfc;
+}
+.number2{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 33%;
+    margin-right: 53%;
+    text-align: center;
+    --background:#fafbfc;
+}
+.number3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 53%;
+    margin-right: 33%;
+    text-align: center;
+    --background:#fafbfc;
+}
+.number4{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 73%;
+    margin-right: 13%;
+    text-align: center;
+    --background:#fafbfc;
+}
+p{
+    font-family: Abel;
+    font-size: 20px;
+}
+.reenviar{
+    position: absolute;
+    top:60%;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align: right;
+   color: white;
+}
+i{
+    //font-family: Amaranth;
+    font-size: 15px;
+}

@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true" class="background">
+  <div class="square">COALICION DE TAXISTAS
+    DE AGUASCALIENTES  
+  </div>
+  <img src="../../assets/taxi.png" class="logo">
+  <div>
+    <ion-label class="bienvenido">!Bienvenido!</ion-label>
+  </div>
+  <div>
+    <ion-label class="bienvenido2">Iniciemos nuestro próximo viaje!</ion-label>
+  </div>
+  <div class="content">
+   <div class="form-group">
+     <ion-item class="terminos">
+          <ion-label class="text1">He leído y acepto los
+            <p class="text2">Términos y Condiciones </p>
+            <p class="text3"> y Aviso de privacidad.</p>
+          </ion-label>
+            <ion-toggle slot="start" name="cherry" color="danger"  checked></ion-toggle>
+      </ion-item>
+      <ion-fab vertical="top" horizontal="end" >
+        <ion-fab-button class="adelante"(click)="siguiente()">
+          <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+   </div>
+  </div>
+</ion-content>

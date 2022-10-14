@@ -1,0 +1,61 @@
+<ion-header [translucent]="true"> 
+  <ion-icon name="arrow-back-circle" class="back"  routerLink="/home"></ion-icon>
+  <ion-title>
+    Editar Perfil
+    </ion-title>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item class="photo">
+    <ion-icon name="person-circle" class="profile"></ion-icon>
+  </ion-item>
+  <div *ngFor="let datos of usuario">
+    <div *ngIf="!datos.isedist; else elseBlock">
+      <div>
+        <ion-list  class="formulario">
+          <ion-item class="nombre">
+            <ion-label position="fixed">Nombre:</ion-label>
+            <ion-input [(ngModel)]="nombre" class="form-control" required>{{datos.nombre}}</ion-input>
+          </ion-item>
+            <ion-item class="apellido">
+              <ion-label position="fixed">Apellido:</ion-label>
+              <ion-input [(ngModel)]="apellido" class="form-control" required>{{datos.apellido}}</ion-input>
+            </ion-item>
+            <ion-item class="telefono">
+              <ion-label position="fixed">Telefono:</ion-label>
+              <ion-input [(ngModel)]="telefono" class="form-control" required>{{datos.telefono}}</ion-input>
+            </ion-item>
+            <ion-item class="correo">
+              <ion-label position="fixed">Correo:</ion-label>
+              <ion-input [(ngModel)]="correo" class="form-control" required>{{datos.correo}}</ion-input>
+            </ion-item>
+        </ion-list>
+         <!--Botones-->
+    <ion-button class="editar" shape="round" (click)="editar(datos)">Editar contacto</ion-button>
+    <ion-button class="eliminar" shape="round" (click)="eliminar(datos.id)">Eliminar contacto</ion-button>
+      </div>
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div>
+      <ion-list class="formulario">
+        Editar Usuario
+        <ion-item class="nombre">
+          <ion-label position="fixed">Nombre:</ion-label>
+          <ion-input [(ngModel)]="!datos.editnombre" class="form-control" required>{{datos.nombre}}</ion-input>
+        </ion-item>
+          <ion-item class="apellido">
+            <ion-label position="fixed">Apellido:</ion-label>
+            <ion-input [(ngModel)]="!datos.editapellido" class="form-control" required>{{datos.apellido}}</ion-input>
+          </ion-item>
+          <ion-item class="correo">
+            <ion-label position="fixed">Correo:</ion-label>
+            <ion-input [(ngModel)]="!datos.editcorreo" class="form-control" required>{{datos.correo}}</ion-input>
+          </ion-item>
+      </ion-list>
+      <ion-button class="cancel" shape="round" (click)="datos.isedist = false">Cancelar</ion-button>
+      <ion-button class="guardar" shape="round" (click)="guardar()">Guardar contacto</ion-button>
+     </div>
+  </ng-template>
+</ion-content>
+
+  

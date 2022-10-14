@@ -1,0 +1,73 @@
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-fab  id="search">
+    <!--<ion-item style="border-radius: 20px;">
+      <ion-label position="Readonly" class="originPoint">¿A donde vas?</ion-label>
+      <div id="geocoder" #asGeoCoder class="geocoder"></div>
+      <ion-input></ion-input>
+    </ion-item>-->
+    <div>
+      <div id="geocoder" #asGeoCoder class="geocoder"></div>
+    </div>
+    
+  </ion-fab>
+
+  <ion-fab slot="fixed" id="options">
+    <ion-fab-button class="menuButton" (click)="toggleMenu()"><ion-icon name="menu"></ion-icon></ion-fab-button>
+    <ion-fab-button class="shareButton"><ion-icon name="share"></ion-icon></ion-fab-button>
+    <ion-fab-button class="homeButton"><ion-icon name="home"></ion-icon></ion-fab-button>
+  </ion-fab>
+  
+  <div id="map"></div>
+  
+  <div class="passengerForm">
+    <div class="wrapper">
+      <div class="box-inputs">
+    
+        <div (click)="changeMode('start')" [ngClass]="{'active-way':modeInput ==='start'}">
+          <div class="mock-label">Inicio</div>
+          <div class="mock-input" >{{wayPoints?.start?.place_name}}</div>
+        </div>
+    
+        <div (click)="changeMode('end')" [ngClass]="{'active-way':modeInput ==='end'}">
+          <div class="mock-label">Final</div>
+          <div class="mock-input" >{{wayPoints?.end?.place_name}}</div>
+        </div>
+    
+      </div>
+    </div>
+
+    <ion-item class="preferenceGender">
+
+      <ion-label>Genero Chofer</ion-label>
+
+      <ion-select placeholder="Opcional" [(ngModel)] ="preferenceGender">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+        <ion-select-option value="o">Other</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item class="hourTravel">
+
+      <ion-label>Hora de viaje</ion-label>
+      <ion-datetime placeholder="ahora" displayFormat="HH:mm" [(ngModel)] ="hourTravel"></ion-datetime>
+      
+    </ion-item>
+
+    <ion-button class="requestButton" (click)="drawRoute()||createT()">Solicitar taxi</ion-button>
+    
+    <ion-card *ngFor="let item of collection.data"> 
+      <ion-item>
+        <ion-label>{{item.driver}}</ion-label>
+      </ion-item>
+    
+      <ion-card-content>
+        {{item.finalPoint}}
+      </ion-card-content>
+    </ion-card>
+    
+  </div>
+</ion-content>

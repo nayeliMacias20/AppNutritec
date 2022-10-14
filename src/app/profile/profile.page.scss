@@ -1,0 +1,37 @@
+ion-title{
+    background: #A93226 ;
+    color: white;
+    text-align: center;
+}
+
+ion-header{
+    background: #A93226 ;
+    height: 10%;
+}
+
+ion-icon.back{
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+ion-icon.profile{
+    height: 120px;
+    width: 120px;
+}
+
+ion-list{
+    margin-top: 80px;
+}
+ion-button.editar{
+    margin-left: 20%;
+    margin-top: 2%;
+    color: white;
+    --background:#A93226;
+}
+ion-button.eliminar{
+    margin-left: 17%;
+    margin-top: 2%;
+    color: white;
+    --background:#A93226;
+}

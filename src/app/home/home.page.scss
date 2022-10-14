@@ -1,0 +1,124 @@
+ion-content.background{
+  --background: linear-gradient(#A93226 ,#E74C3C);
+}
+
+ion-label.originPoint{
+  --background:white;
+}
+
+
+  #map {
+    width: 100%;
+    height: 60%;
+    //opacity: 0;
+    //transition: opacity 150ms ease-in;
+    //display: block;
+    //&.show-map{
+     // opacity: 1;
+   // }
+}
+
+  //---buttons desing------------------------------------------
+  ion-button.requestButton{
+      --background:black;
+      width: 80%;
+      height: 45px;
+      border-radius: 40%;
+      padding-left: 17%;
+  
+  }
+  
+  ion-fab-button.shareButton{
+      opacity: .5;
+      --background:black;
+      margin-top: 3px;
+  }
+
+  ion-fab-button.menuButton{
+      opacity: .5;
+      --background:black;
+      margin-top: 20px;
+  }
+
+  ion-fab-button.homeButton{
+      opacity: .5;
+      --background:black;
+      margin-top: 3px;
+  }
+
+  #options{
+      margin-top: 40px;
+  }
+
+  ion-button.hour{
+      width: 50%;
+      height: 100%;
+      margin-right: 0%;
+  }
+  //---ion-inputs desing----------------------------------------
+  ion-item{
+      margin-top: 5px;
+  }
+
+  #search{
+      margin-top: 60px;
+      margin-left: 25%;
+      margin-right: 10px;
+  }
+
+
+  ion-item.preferenceGender{
+    border-radius:20px; 
+    margin-left: 5px; 
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  ion-item.hourTravel{
+    border-radius:20px; 
+    margin-left: 5px; 
+    margin-right: 5px;
+  }
+
+  .box-inputs {
+    --background:#A93226;
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  .mock-input {
+    background: white;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    box-shadow: 0 0 10px #0000001a;
+    color: #808080;
+    min-height: 18px;
+    border-radius:20px; 
+    margin-left: 5px; 
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .mock-label {
+    padding: .0;
+    font-weight: 600;
+    border-radius:20px; 
+    margin-left: 5px; 
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  .btn-route {
+    background-color: white;
+    padding: .5rem 1rem;
+    border: solid 2px gray;
+  }
+  
+  .wrapper{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }

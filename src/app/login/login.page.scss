@@ -1,0 +1,99 @@
+*{
+    font-family: Abel;
+}
+.background{
+    --background: linear-gradient(rgb(238, 121, 121));
+}
+.square{
+    //font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-family: Abel;
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 950; 
+    text-align: center; 
+    background: #f12b11ec; 
+    margin: 0 0 20px; 
+    margin-top: 0%;
+    margin-right: 10%;
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 0px 35px 35px 0px ; 
+    -moz-border-radius: 0px 35px 35px 0px ; 
+    -webkit-border-radius: 0px 35px 35px 0px ; 
+    border: 2px solid #f8f8f8; 
+}
+.logo{
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.adelante{
+    position: relative;
+    margin-right: 20%;
+    margin-top:20%;
+    --background: none;
+}
+.arrow{
+    color: black;
+}
+.content{
+    position: relative;
+    color: blanchedalmond;
+}
+.card-numero{
+    background: #a9312600;
+    margin-top: 0%;
+    margin-left: 25px;
+    margin-right: 10%;
+    height: 58px;
+}
+.form-control{
+    font-size: 15px;
+    font: gray;
+    font-weight: bold;
+    --background:none;
+    font-family: Abel;
+    margin-top:5%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.bienvenido{
+    position: absolute;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 35%;
+    margin-top: 0%;
+}
+.bienvenido2{
+    position: absolute;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.terminos{
+    margin-top: 25%;
+    margin-right: 20px;
+    height: 100px;
+    --background:none;
+}
+.text1{
+    font-family: Abel;
+}
+.text2{
+    font-family: Abel;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration-line:underline;
+    text-decoration-color:black;
+}
+.text3{
+    font-family: Abel;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration-line:underline;
+    text-decoration-color:black;
+}

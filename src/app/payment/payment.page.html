@@ -1,0 +1,45 @@
+<ion-header [translucent]="true"> 
+  <ion-icon name="arrow-back-circle" class="back"  routerLink="/home"></ion-icon>
+  <ion-title>
+      Métodos de Pago
+    </ion-title>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="titulo">
+    <ion-label >Métodos de pago</ion-label>
+  </div>
+  <div class="metodos">
+    <!--<ion-label class="nuevolabel" (click)="agregarPago()">Agrega un método de pago nuevo + </ion-label>-->
+    <ion-card class="metodosefectivo" (click)="pagoEfectivoAlert()">
+      <div class="iconos">
+          <img class="imge" src="../../assets/cash_icon-icons.com_51028.png"/>
+          <ion-label class="efectivolabel">Efectivo</ion-label>
+      </div>  
+    </ion-card>
+    <ion-card class="metodoscard" (click)="pagoTarjetaAlert()">
+      <div class="iconos">
+          <img class="imgi" src="../../assets/businesspaymentcard_paymentcard_visa_negocio_pag_2339.png"/>
+          <ion-label class="tarjetalabel">Tarjeta Crédito / Débito</ion-label>
+      </div>
+    </ion-card>
+    <ion-card class="metodoscard" (click)="agregarTarjeta()">
+      <div class="iconos">
+          <img class="imgic" src="../../assets/plus_icon-icons.com_66467.png"/>
+          <ion-label class="maslabel">Agregar método de pago</ion-label>
+      </div>
+    </ion-card>
+  </div>
+  <div class="pagos">
+    <ion-label class="mostrartexto">Mostrar tus métodos de pagos anteriores</ion-label>
+    <ion-toggle slot="start" name="cherry" color="danger" checked class="mostrar" (click)="showInfo"></ion-toggle>
+    <ion-card >
+      <ion-card-header>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title>Tus Métodos de pago</ion-card-title>
+      </ion-card-header>
+      <ion-card-content *ngFor="let tarjeta of usuario">
+        <img class="imgi1" src="../../assets/businesspaymentcard_paymentcard_visa_negocio_pag_2339.png"/> {{tarjeta.num}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

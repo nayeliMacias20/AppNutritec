@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true" class="background">
+    <div>
+      <ion-fab vertical="top" horizontal="end" >
+        <ion-fab-button class="back" (click)="Login()">
+          <ion-icon name="arrow-back-outline" class="arrow"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+    <div class="square">Ingresa el código de 4 digítos 
+      enviado al +52 449 155 5652
+    </div>
+    <div class="number1">
+      <ion-item class="numbers">
+        <ion-input type="number" class="numberinput" value="0"></ion-input>
+      </ion-item>
+    </div>
+    <div class="number2">
+      <ion-item class="numbers">
+        <ion-input type="number" class="numberinput" value="1"></ion-input>
+      </ion-item>
+    </div>
+    <div class="number3">
+      <ion-item class="numbers">
+        <ion-input type="number" class="numberinput" value="2"></ion-input>
+      </ion-item>
+    </div>
+    <div class="number4">
+      <ion-item class="numbers">
+        <ion-input type="number" class="numberinput" value="3"></ion-input>
+      </ion-item>
+    </div>
+      <i class="reenviar" (click)="Code()">Reenviar el código</i>
+      <ion-fab vertical="top" horizontal="end" >
+        <ion-fab-button class="adelante" (click)="Code()">
+          <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+</ion-content>

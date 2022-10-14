@@ -1,0 +1,23 @@
+<ion-header [translucent]="true"> 
+  <ion-icon name="arrow-back-circle" class="back"  routerLink="/payment"></ion-icon>
+  <ion-title>
+      Tarjeta Débito/Crédito
+    </ion-title>
+</ion-header>
+
+<ion-content>
+  <div class="formulario"> 
+    <ion-label class="nombre">Núm. de tarjeta</ion-label>
+    <ion-input class="rounded" [(ngModel)]="num" name="num" placeholder="                 XXXX-XXXX-XXXX-XXXX"></ion-input>
+    <ion-label class="fecha" placeholder="mm/aa">Fecha de caducidad
+      <img class="advertencia" src="../../assets/dialogerror_92823.png" (click)="alerta()"> 
+    </ion-label>
+    <ion-input class="roundedc" [(ngModel)]="fecha" name="fechac" placeholder=" MM/AA"></ion-input>
+    <ion-label class="codigo" placeholder="CVV">Código de seguridad 
+      <img class="advertencia" src="../../assets/dialogerror_92823.png" (click)="alertacvv()">
+    </ion-label>
+    <ion-input class="roundedcvv" [(ngModel)]="cvv" name="CVV" placeholder="CVV"></ion-input>
+  </div> 
+  <ion-button class="agregar" shape="round" (click)="agregarTarjeta()">Agregar forma de pago</ion-button>
+
+</ion-content>
