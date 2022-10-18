@@ -1,0 +1,59 @@
+<!-- <ion-content>
+  <form [formGroup]="usuario">
+    <ion-item>
+      <ion-label>Nombre:</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-input formControlName="email"></ion-input>
+    </ion-item>
+ </form>
+ <p class="ion-padding">{{ usuario.controls.nombre.value }}</p>
+ <p class="ion-text-center">
+   <ion-button (click)="cambiarNombre()">Cambiar nombre</ion-button>
+ </p>
+</ion-content> -->
+
+<ion-content>
+  <form [formGroup]="log" (ngSubmit)="login()" class="login" style="padding-top:10px">
+  <ion-title>Log in</ion-title>
+<br><br>
+<div class="form-group" style="text-align: start;">
+<ion-item>
+  <ion-label position="floating"><ion-icon name="mail-outline"></ion-icon>Email</ion-label>
+  <ion-input formControlName="email"  placeholder="Ingresa Correo">
+  </ion-input>
+  <span class="text-muted ml-2" *ngIf="log.controls['email'].errors?.required && log.controls['email'].touched">
+    Es necesario ingresar un correo electrónico</span>
+    <span class="text-muted ml-2" *ngIf="log.controls['email'].errors?.email">
+      Es necesario ingresar un correo electrónico</span>
+</ion-item><br>
+
+</div>
+<ion-item>
+  <ion-label position="floating"><ion-icon name="lock-closed-outline"></ion-icon>Password</ion-label>
+  <ion-input type="password" formControlName="password" placeholder="Ingresa Contraseña" max-length="16"></ion-input>
+  <span class="text-muted ml-2" *ngIf="log.controls['password'].errors?.required && log.controls['password'].touched">
+    Es necesario ingresar una contraseña</span>
+    <span class="text-muted ml-2" *ngIf="log.controls['password'].errors?.minlength">
+      La contraseña debe de tener al menos 8 carácteres y máximo 16 carácteres
+  </span>
+</ion-item><br>
+<hr>
+<ion-button>Log in</ion-button><br><br>
+
+</form>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>No tienes una cuenta?</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        Haz clic aquí   
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

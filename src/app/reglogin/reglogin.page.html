@@ -1,0 +1,70 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>reglogin</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content>
+  <form [formGroup]="registro" class="registro"  style="padding-top:10px">  
+    <ion-card> 
+      <ion-card-header>
+        <ion-card-title>Empecemos!</ion-card-title>
+        <ion-card-subtitle>Llena el siguiente formulario para continuar</ion-card-subtitle>
+      </ion-card-header>
+  
+      <ion-card-content>
+       
+          <ion-item><!--Name-->
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-input formControlName="username" type="text" placeholder=" Nombre de usuario" class="custom"></ion-input>
+          </ion-item>
+        
+          <ion-item><!--Email-->
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-input formControlName="email" type="email" placeholder=" Email@domain.com" class="custom"></ion-input>
+           
+          </ion-item>
+           <!--Validaciones para el input email, si es tocado y que ponga un formato de email @-->
+          <span class="text-muted ml-2" *ngIf="registro.controls['email'].errors?.required && registro.controls['email'].touched">
+            Es necesario ingresar un correo electrónico</span>
+            <span class="text-muted ml-2" *ngIf="registro.controls['email'].errors?.email">
+              Es necesario ingresar un correo electrónico</span>
+      
+          <ion-item><!--Password-->
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-input formControlName="password" type="password" placeholder=" Contraseña" class="custom"></ion-input>
+          </ion-item>
+          <!--Validaciones para el input password-->
+          <span class="text-muted ml-2" *ngIf="registro.controls['password'].errors?.required && registro.controls['password'].touched">
+            Es necesario ingresar una contraseña</span>
+            <span class="text-muted ml-2" *ngIf="registro.controls['password'].errors?.minlength">
+              La contraseña debe de tener al menos 8 carácteres y máximo 16 carácteres
+          </span>
+      
+          <ion-item><!--Password-->
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-input formControlName="password" type="password" placeholder=" Confirmar contraseña" class="custom"></ion-input>
+          </ion-item>
+  
+      <ion-button expand="full" shape="round">Continuar</ion-button>
+      
+      </ion-card-content>
+    
+    </ion-card>
+  </form>
+ 
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Ya tienes una cuenta?</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        Ingresar     
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
